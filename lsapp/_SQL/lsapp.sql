@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 05, 2018 at 09:51 PM
+-- Generation Time: Aug 05, 2018 at 09:57 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -73,13 +73,6 @@ CREATE TABLE `posts` (
   `cover_image` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `posts`
---
-
-INSERT INTO `posts` (`id`, `title`, `body`, `created_at`, `updated_at`, `user_id`, `cover_image`) VALUES
-(10, 'Post One', 'This is the Post One', '2018-08-05 10:05:43', '2018-08-05 10:05:43', 2, 'noimage.jpg');
-
 -- --------------------------------------------------------
 
 --
@@ -95,14 +88,6 @@ CREATE TABLE `users` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Boro Radojcic', 'boro@gmail.com', '$2y$10$LgepDdVQmed.rRDZ56DZp.DlbowRPzW21xKDNwAoacf83/bql3LYy', '0LZ3dacReBB00AKPArwYd7jRtBuHQn0U2aurGmUkYk9zh1ESoBED96Hsa8i4', '2018-08-04 10:10:45', '2018-08-04 10:10:45'),
-(2, 'Jhon Doe', 'test@test.com', '$2y$10$zjnwSy/kA1ViKmMRH5cjm.C/fbwlS/hSv1BRBphMH1cNHl3PK1yzO', '0taGJ0a9EEsPH73ktpbyp7WjAA6Pi2jDzabD60Bsrb3qg6fgd1vyvfshQAeV', '2018-08-04 12:07:00', '2018-08-04 12:07:00');
 
 --
 -- Indexes for dumped tables
